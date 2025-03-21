@@ -314,7 +314,7 @@ class Run : CliktCommand("run") {
   }
 
   private fun targetDir(book: Book): File {
-    val targetDir = File("$mediaDir/${book.authors.first()}/${book.title}")
+    val targetDir = File("$mediaDir/${book.title}")
     return targetDir
   }
 }
